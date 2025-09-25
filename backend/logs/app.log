@@ -1,0 +1,968 @@
+2025-09-22 15:37:27,319 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:27,321 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:37:27,321 - sqlalchemy.engine.Engine - INFO - [cached since 23.65s ago] ('sonu@gmail.com',)
+2025-09-22 15:37:27,586 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 15:37:27,587 - sqlalchemy.engine.Engine - INFO - [cached since 19.67s ago] ('70029d33-f20f-43ab-be6d-9cb8f1572bd5', 'sonu@gmail.com', '$2b$12$W7vRlL20ppdX1AiJTgaN4Og8cXjbfpqLeRxaXFk50C5vzAIWCBuMy', 'Sonu', '159357852654', 'STAFF', None, 0, 0, 1, None)
+2025-09-22 15:37:27,589 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:27,591 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:27,591 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:37:27,591 - sqlalchemy.engine.Engine - INFO - [cached since 19.67s ago] ('70029d33-f20f-43ab-be6d-9cb8f1572bd5',)
+2025-09-22 15:37:27,592 - app.api.v1.endpoints.auth - INFO - New user registered: sonu@gmail.com with role UserRole.STAFF
+2025-09-22 15:37:27,593 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:37:27,625 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:27,625 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:37:27,626 - sqlalchemy.engine.Engine - INFO - [cached since 23.95s ago] ('sonu@gmail.com',)
+2025-09-22 15:37:27,865 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:27,875 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:27,876 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 15:37:27,876 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('2cb1442c-33f1-4bdc-8292-5266fb54dd46', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3MDAyOWQzMy1mMjBmLTQzYWItYmU2ZC05Y2I4ZjE1NzJiZDUiLCJleHAiOjE3NTkxNDA0NDcsInR5cGUiOiJyZWZyZXNoIn0.Vwce-x-YjTzLFvlatek9jLnAHXBaqGBgzSjWRWa1YLk', '2025-09-29 10:07:27.875086', '70029d33-f20f-43ab-be6d-9cb8f1572bd5')
+2025-09-22 15:37:27,877 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:29,604 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:29,604 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:37:29,604 - sqlalchemy.engine.Engine - INFO - [cached since 25.93s ago] ('prem12@gmail.com',)
+2025-09-22 15:37:29,872 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 15:37:29,872 - sqlalchemy.engine.Engine - INFO - [cached since 21.95s ago] ('06e1e69e-7b14-4aa0-a6b9-07f06c66bf8f', 'prem12@gmail.com', '$2b$12$4wkzDnRfYMORMIU9GTJm2ePsDdHTV4VzAjWqUU6qv09oVMnvJqTiW', 'Prem Kumar ', '6443879843', 'ADMIN', None, 0, 0, 1, None)
+2025-09-22 15:37:29,872 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:29,873 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:29,873 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:37:29,873 - sqlalchemy.engine.Engine - INFO - [cached since 21.95s ago] ('06e1e69e-7b14-4aa0-a6b9-07f06c66bf8f',)
+2025-09-22 15:37:29,874 - app.api.v1.endpoints.auth - INFO - New user registered: prem12@gmail.com with role UserRole.ADMIN
+2025-09-22 15:37:29,874 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:37:29,924 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:29,924 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:37:29,924 - sqlalchemy.engine.Engine - INFO - [cached since 26.25s ago] ('prem12@gmail.com',)
+2025-09-22 15:37:30,160 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:30,161 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:30,162 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 15:37:30,162 - sqlalchemy.engine.Engine - INFO - [cached since 2.286s ago] ('0c337f35-8901-48bd-ade7-0100f8a44031', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwNmUxZTY5ZS03YjE0LTRhYTAtYTZiOS0wN2YwNmM2NmJmOGYiLCJleHAiOjE3NTkxNDA0NTAsInR5cGUiOiJyZWZyZXNoIn0.yEiAXRs1jO0brj9I2z9fhRzkGyk8I7iZ4PbL6GChOPg', '2025-09-29 10:07:30.161441', '06e1e69e-7b14-4aa0-a6b9-07f06c66bf8f')
+2025-09-22 15:37:30,162 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:37:43,679 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:37:43,680 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:37:43,680 - sqlalchemy.engine.Engine - INFO - [cached since 40.01s ago] ('nishunara862@gmail.com',)
+2025-09-22 15:37:43,682 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:38:37,814 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:38:37,816 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:38:37,816 - sqlalchemy.engine.Engine - INFO - [cached since 94.14s ago] ('nishunara862@gmail.com',)
+2025-09-22 15:38:38,073 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:38:38,075 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:38:38,076 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 15:38:38,076 - sqlalchemy.engine.Engine - INFO - [cached since 70.2s ago] ('6cf3f8df-eb54-4874-84c4-f179169f62cc', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTY2NTk5YS1mYmFjLTQ0ZmEtYWMwZC1lNzE1ODBiZjQxNWEiLCJleHAiOjE3NTkxNDA1MTgsInR5cGUiOiJyZWZyZXNoIn0.pKAXLtgRCxEkyNA3_8vLzidpGb_jrgge8ETZ_IyxSBY', '2025-09-29 10:08:38.074877', '0e66599a-fbac-44fa-ac0d-e71580bf415a')
+2025-09-22 15:38:38,078 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:38:43,218 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:38:43,219 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:38:43,219 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-22 15:38:43,222 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 15:38:43,222 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-22 15:38:43,223 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:38:44,531 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:38:44,531 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:38:44,531 - sqlalchemy.engine.Engine - INFO - [cached since 1.312s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-22 15:38:44,534 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 15:38:44,534 - sqlalchemy.engine.Engine - INFO - [cached since 1.312s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-22 15:38:44,535 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:49:34,876 - app.core.logging - INFO - Logging setup completed
+2025-09-22 15:49:34,886 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 15:49:34,888 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:49:34,888 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 15:49:34,888 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,888 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 15:49:34,888 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 15:49:34,889 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:49:34,890 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:49:34,890 - app.core.database - INFO - Database tables created successfully
+2025-09-22 15:57:19,102 - app.core.logging - INFO - Logging setup completed
+2025-09-22 15:57:19,120 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 15:57:19,121 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:57:19,121 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 15:57:19,121 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,122 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 15:57:19,122 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,122 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 15:57:19,122 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 15:57:19,123 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:57:19,124 - app.core.database - INFO - Database tables created successfully
+2025-09-22 15:58:02,463 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:02,482 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:58:02,482 - sqlalchemy.engine.Engine - INFO - [generated in 0.00031s] ('nishu99@gmail.com',)
+2025-09-22 15:58:02,484 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 15:58:02,750 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 15:58:02,750 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ('d2766f91-b318-4699-b3e8-f8f72e691fe9', 'nishu99@gmail.com', '$2b$12$CP..xRuPTP8b1qracdLlHOuBHD3tadskFz0FdjyH6vBJifuqJ353W', 'Nishu ', '1234567890', 'STAFF', None, 0, 0, 1, None)
+2025-09-22 15:58:02,751 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:02,752 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:02,753 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:58:02,753 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] ('d2766f91-b318-4699-b3e8-f8f72e691fe9',)
+2025-09-22 15:58:02,754 - app.api.v1.endpoints.auth - INFO - New user registered: nishu99@gmail.com with role UserRole.STAFF
+2025-09-22 15:58:02,755 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:58:02,817 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:02,818 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:58:02,818 - sqlalchemy.engine.Engine - INFO - [cached since 0.3359s ago] ('nishu99@gmail.com',)
+2025-09-22 15:58:03,059 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:03,063 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:03,064 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 15:58:03,064 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('80ea28ae-bd54-4e74-997b-2efbf8327c5c', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkMjc2NmY5MS1iMzE4LTQ2OTktYjNlOC1mOGY3MmU2OTFmZTkiLCJleHAiOjE3NTkxNDE2ODMsInR5cGUiOiJyZWZyZXNoIn0.V4p8MEh8B3G6vldUDA7yEWdrXsGGhgV3hW-5GipFGbA', '2025-09-29 10:28:03.062866', 'd2766f91-b318-4699-b3e8-f8f72e691fe9')
+2025-09-22 15:58:03,065 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:17,683 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:17,687 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:58:17,687 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] ('d2766f91-b318-4699-b3e8-f8f72e691fe9',)
+2025-09-22 15:58:17,690 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 15:58:17,690 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] (50, 0)
+2025-09-22 15:58:17,692 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:58:25,752 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:25,752 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:58:25,752 - sqlalchemy.engine.Engine - INFO - [cached since 23.27s ago] ('dhyan12@gmail.com',)
+2025-09-22 15:58:26,022 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 15:58:26,023 - sqlalchemy.engine.Engine - INFO - [cached since 23.27s ago] ('680a3e7e-79dd-43c6-bd69-1143a13133e8', 'dhyan12@gmail.com', '$2b$12$LbA/u1GJw2PNzG8swqJ1CukIBYPbnue1EyDTRradds.q0EutvxKmC', 'Dhyan Singh', '6945785694', 'ADMIN', None, 0, 0, 1, None)
+2025-09-22 15:58:26,024 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:26,025 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:26,025 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:58:26,025 - sqlalchemy.engine.Engine - INFO - [cached since 23.27s ago] ('680a3e7e-79dd-43c6-bd69-1143a13133e8',)
+2025-09-22 15:58:26,025 - app.api.v1.endpoints.auth - INFO - New user registered: dhyan12@gmail.com with role UserRole.ADMIN
+2025-09-22 15:58:26,025 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 15:58:26,182 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:26,182 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 15:58:26,183 - sqlalchemy.engine.Engine - INFO - [cached since 23.7s ago] ('dhyan12@gmail.com',)
+2025-09-22 15:58:26,431 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:26,432 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:26,432 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 15:58:26,433 - sqlalchemy.engine.Engine - INFO - [cached since 23.37s ago] ('d98fdb0a-8cb2-49a9-bdf5-a8a83b516b98', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODBhM2U3ZS03OWRkLTQzYzYtYmQ2OS0xMTQzYTEzMTMzZTgiLCJleHAiOjE3NTkxNDE3MDYsInR5cGUiOiJyZWZyZXNoIn0.zeStHQa8Q8aNwH_dxslWb_G8X45h1fBbHGZ64-E3lho', '2025-09-29 10:28:26.432258', '680a3e7e-79dd-43c6-bd69-1143a13133e8')
+2025-09-22 15:58:26,433 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 15:58:33,835 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 15:58:33,836 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 15:58:33,836 - sqlalchemy.engine.Engine - INFO - [cached since 16.15s ago] ('680a3e7e-79dd-43c6-bd69-1143a13133e8',)
+2025-09-22 15:58:33,838 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 15:58:33,838 - sqlalchemy.engine.Engine - INFO - [cached since 16.15s ago] (50, 0)
+2025-09-22 15:58:33,841 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 16:01:46,830 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:01:46,833 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 16:01:46,834 - sqlalchemy.engine.Engine - INFO - [cached since 209.2s ago] ('680a3e7e-79dd-43c6-bd69-1143a13133e8',)
+2025-09-22 16:01:46,841 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 16:01:46,841 - sqlalchemy.engine.Engine - INFO - [cached since 209.2s ago] (50, 0)
+2025-09-22 16:01:46,845 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 16:02:04,050 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:02:04,052 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 16:02:04,052 - sqlalchemy.engine.Engine - INFO - [cached since 226.4s ago] ('d2766f91-b318-4699-b3e8-f8f72e691fe9',)
+2025-09-22 16:02:04,063 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 16:02:04,064 - sqlalchemy.engine.Engine - INFO - [cached since 226.4s ago] (50, 0)
+2025-09-22 16:02:04,068 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 16:06:21,752 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:06:21,768 - sqlalchemy.engine.Engine - INFO - SELECT refresh_tokens.id, refresh_tokens.token, refresh_tokens.expires_at, refresh_tokens.created_at, refresh_tokens.user_id 
+FROM refresh_tokens 
+WHERE refresh_tokens.token = ?
+2025-09-22 16:06:21,769 - sqlalchemy.engine.Engine - INFO - [generated in 0.00172s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODBhM2U3ZS03OWRkLTQzYzYtYmQ2OS0xMTQzYTEzMTMzZTgiLCJleHAiOjE3NTkxNDE3MDYsInR5cGUiOiJyZWZyZXNoIn0.zeStHQa8Q8aNwH_dxslWb_G8X45h1fBbHGZ64-E3lho',)
+2025-09-22 16:06:21,783 - sqlalchemy.engine.Engine - INFO - DELETE FROM refresh_tokens WHERE refresh_tokens.id = ?
+2025-09-22 16:06:21,784 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] ('d98fdb0a-8cb2-49a9-bdf5-a8a83b516b98',)
+2025-09-22 16:06:21,784 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 16:06:48,215 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:06:48,217 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 16:06:48,217 - sqlalchemy.engine.Engine - INFO - [cached since 525.7s ago] ('dhyan12@gmail.com',)
+2025-09-22 16:06:48,481 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 16:06:48,492 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:06:48,493 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 16:06:48,493 - sqlalchemy.engine.Engine - INFO - [cached since 525.4s ago] ('ff11cc1d-6d92-494d-a74b-302f3a08844e', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2ODBhM2U3ZS03OWRkLTQzYzYtYmQ2OS0xMTQzYTEzMTMzZTgiLCJleHAiOjE3NTkxNDIyMDgsInR5cGUiOiJyZWZyZXNoIn0.5VBcoTTGO0Cvz1a6m4kdYNldgUWV93am5DWRM15VexQ', '2025-09-29 10:36:48.491641', '680a3e7e-79dd-43c6-bd69-1143a13133e8')
+2025-09-22 16:06:48,496 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 16:07:01,395 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 16:07:01,396 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 16:07:01,396 - sqlalchemy.engine.Engine - INFO - [cached since 523.7s ago] ('680a3e7e-79dd-43c6-bd69-1143a13133e8',)
+2025-09-22 16:07:01,399 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 16:07:01,400 - sqlalchemy.engine.Engine - INFO - [cached since 523.7s ago] (50, 0)
+2025-09-22 16:07:01,403 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:07:48,608 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:07:48,625 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:07:48,626 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:07:48,627 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:07:48,628 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:07:48,629 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:15:10,031 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:15:10,052 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:15:10,056 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:15:10,056 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:15:10,056 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:15:10,057 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,058 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:15:10,058 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:15:10,059 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:15:10,059 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:29:50,743 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:29:50,808 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:29:50,812 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:29:50,812 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:29:50,812 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,813 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:29:50,813 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,813 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:29:50,813 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:29:50,814 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:29:50,815 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:29:50,816 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:32:44,535 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:32:44,545 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:32:44,546 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:32:44,547 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:32:44,547 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,547 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:32:44,547 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,547 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:32:44,548 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:32:44,549 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:32:44,549 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:35:06,630 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 22:35:07,354 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:35:07,364 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:35:07,365 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:35:07,365 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:35:07,365 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,366 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:35:07,366 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,366 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:35:07,366 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,366 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:35:07,367 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,367 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:35:07,367 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,367 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:35:07,367 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:35:07,368 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:35:07,368 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:36:58,621 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:36:58,631 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:36:58,632 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:36:58,632 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:36:58,632 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,633 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:36:58,633 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,633 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:36:58,633 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:36:58,634 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:36:58,635 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:39:29,146 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 22:39:41,303 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:39:41,314 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:39:41,315 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:39:41,316 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:39:41,317 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:39:41,318 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:39:41,318 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:43:02,742 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:02,774 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:02,774 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] ('nishu12578@gmail.com',)
+2025-09-22 22:43:02,779 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 22:43:03,487 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 22:43:03,488 - sqlalchemy.engine.Engine - INFO - [generated in 0.00057s] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e', 'nishu12578@gmail.com', '$2b$12$efdRCHm6R4P5cdW9eQQt/uxnO1dVNI4Rp5Hu6JrSfssMO9znzNtem', 'nishu', '1234567890', 'CITIZEN', None, 0, 0, 1, None)
+2025-09-22 22:43:03,495 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:43:03,518 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:03,520 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:43:03,521 - sqlalchemy.engine.Engine - INFO - [generated in 0.00107s] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e',)
+2025-09-22 22:43:03,523 - app.api.v1.endpoints.auth - INFO - New user registered: nishu12578@gmail.com with role UserRole.CITIZEN
+2025-09-22 22:43:03,527 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:43:03,569 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:03,569 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:03,570 - sqlalchemy.engine.Engine - INFO - [cached since 0.796s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:04,453 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:43:04,476 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:04,478 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 22:43:04,478 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ('11d61283-4233-41cd-9135-70e2ca421462', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhOWZhMWI2Yy1kZjM0LTRkZGUtOGFlMS01ZDc0MzY4MTViOWUiLCJleHAiOjE3NTkxNjU5ODQsInR5cGUiOiJyZWZyZXNoIn0.ER1GMYcwpgOw1J_OV3GO_AEWdkMdu0QDSv3xCrmu5i8', '2025-09-29 17:13:04.475060', 'a9fa1b6c-df34-4dde-8ae1-5d7436815b9e')
+2025-09-22 22:43:04,481 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:43:06,777 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:06,777 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:06,778 - sqlalchemy.engine.Engine - INFO - [cached since 4.004s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:06,778 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:43:08,731 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:08,732 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:08,733 - sqlalchemy.engine.Engine - INFO - [cached since 5.96s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:08,735 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:43:20,117 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:20,118 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:20,118 - sqlalchemy.engine.Engine - INFO - [cached since 17.35s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:20,119 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:43:20,874 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:20,874 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:20,874 - sqlalchemy.engine.Engine - INFO - [cached since 18.11s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:20,875 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:43:21,239 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:43:21,239 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:43:21,240 - sqlalchemy.engine.Engine - INFO - [cached since 18.47s ago] ('nishu12578@gmail.com',)
+2025-09-22 22:43:21,240 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:45:37,511 - app.core.logging - INFO - Logging setup completed
+2025-09-22 22:45:37,524 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 22:45:37,526 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:45:37,526 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 22:45:37,526 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 22:45:37,527 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 22:45:37,528 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:45:37,528 - app.core.database - INFO - Database tables created successfully
+2025-09-22 22:47:19,732 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:47:19,747 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:47:19,748 - sqlalchemy.engine.Engine - INFO - [generated in 0.00052s] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e',)
+2025-09-22 22:47:19,751 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (id, title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 22:47:19,751 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] ('cd8dcb46-502e-46ec-b4e7-cbf303874c13', 'street Light not working', 'Jaldi thik kardo bhyii bacho ko khelna hota h', 'STREETLIGHT', 4, 'PENDING', 37.7749, -122.4194, 'Current Location', '[]', None, 'TRK-3F1461CD', 'a9fa1b6c-df34-4dde-8ae1-5d7436815b9e', None)
+2025-09-22 22:47:19,753 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:47:19,755 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:47:19,756 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.id = ?
+2025-09-22 22:47:19,756 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] ('cd8dcb46-502e-46ec-b4e7-cbf303874c13',)
+2025-09-22 22:47:19,758 - app.api.v1.endpoints.issues - INFO - Issue created: TRK-3F1461CD by nishu12578@gmail.com
+2025-09-22 22:47:19,761 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:47:31,868 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:47:31,869 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:47:31,869 - sqlalchemy.engine.Engine - INFO - [cached since 12.12s ago] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e',)
+2025-09-22 22:47:31,871 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (id, title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 22:47:31,871 - sqlalchemy.engine.Engine - INFO - [cached since 12.12s ago] ('e69d9d56-6040-41e3-9b92-b458a1c9b0e6', 'street Light not working', 'Jaldi thik kardo bhyii bacho ko khelna hota h', 'STREETLIGHT', 4, 'PENDING', 37.7749, -122.4194, 'Current Location', '["https://images.pexels.com/photos/1166643/pexels-photo-1166643.jpeg?w=400"]', None, 'TRK-950B0726', 'a9fa1b6c-df34-4dde-8ae1-5d7436815b9e', None)
+2025-09-22 22:47:31,872 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:47:31,873 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:47:31,874 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.id = ?
+2025-09-22 22:47:31,874 - sqlalchemy.engine.Engine - INFO - [cached since 12.12s ago] ('e69d9d56-6040-41e3-9b92-b458a1c9b0e6',)
+2025-09-22 22:47:31,874 - app.api.v1.endpoints.issues - INFO - Issue created: TRK-950B0726 by nishu12578@gmail.com
+2025-09-22 22:47:31,875 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:48:04,484 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:48:04,485 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:48:04,485 - sqlalchemy.engine.Engine - INFO - [cached since 44.74s ago] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e',)
+2025-09-22 22:48:04,489 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 22:48:04,489 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e', 50, 0)
+2025-09-22 22:48:04,491 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:48:32,610 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:48:32,610 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:48:32,610 - sqlalchemy.engine.Engine - INFO - [cached since 72.87s ago] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e',)
+2025-09-22 22:48:32,621 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 22:48:32,621 - sqlalchemy.engine.Engine - INFO - [cached since 28.13s ago] ('a9fa1b6c-df34-4dde-8ae1-5d7436815b9e', 50, 0)
+2025-09-22 22:48:32,623 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:49:27,650 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:49:27,658 - sqlalchemy.engine.Engine - INFO - SELECT refresh_tokens.id, refresh_tokens.token, refresh_tokens.expires_at, refresh_tokens.created_at, refresh_tokens.user_id 
+FROM refresh_tokens 
+WHERE refresh_tokens.token = ?
+2025-09-22 22:49:27,658 - sqlalchemy.engine.Engine - INFO - [generated in 0.00050s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhOWZhMWI2Yy1kZjM0LTRkZGUtOGFlMS01ZDc0MzY4MTViOWUiLCJleHAiOjE3NTkxNjU5ODQsInR5cGUiOiJyZWZyZXNoIn0.ER1GMYcwpgOw1J_OV3GO_AEWdkMdu0QDSv3xCrmu5i8',)
+2025-09-22 22:49:27,662 - sqlalchemy.engine.Engine - INFO - DELETE FROM refresh_tokens WHERE refresh_tokens.id = ?
+2025-09-22 22:49:27,662 - sqlalchemy.engine.Engine - INFO - [generated in 0.00076s] ('11d61283-4233-41cd-9135-70e2ca421462',)
+2025-09-22 22:49:27,665 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:49:58,387 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:49:58,396 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:49:58,396 - sqlalchemy.engine.Engine - INFO - [generated in 0.00032s] ('amannara97@gmail.com',)
+2025-09-22 22:49:58,404 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 22:49:58,683 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 22:49:58,683 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] ('b84d3272-3aff-47a3-8e14-1fc3e0618af2', 'amannara97@gmail.com', '$2b$12$RZE/KUY/O6gJqUtDJzTG6uirEi.TI9iPUbyvhTLsplzJnjsMdikF6', 'aman', '7836096966', 'FIELDWORKER', None, 0, 0, 1, None)
+2025-09-22 22:49:58,686 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:49:58,687 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:49:58,687 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 22:49:58,688 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('b84d3272-3aff-47a3-8e14-1fc3e0618af2',)
+2025-09-22 22:49:58,688 - app.api.v1.endpoints.auth - INFO - New user registered: amannara97@gmail.com with role UserRole.FIELDWORKER
+2025-09-22 22:49:58,689 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 22:49:58,701 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:49:58,702 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 22:49:58,702 - sqlalchemy.engine.Engine - INFO - [cached since 0.3059s ago] ('amannara97@gmail.com',)
+2025-09-22 22:49:58,953 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 22:49:58,954 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 22:49:58,955 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 22:49:58,955 - sqlalchemy.engine.Engine - INFO - [generated in 0.00011s] ('9c6eeda2-7c79-4761-8cb4-011eaac0bf22', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiODRkMzI3Mi0zYWZmLTQ3YTMtOGUxNC0xZmMzZTA2MThhZjIiLCJleHAiOjE3NTkxNjYzOTgsInR5cGUiOiJyZWZyZXNoIn0.J1mAAfdp7OFhcoV0hskSr1YiXtpALtRLkl4yCV2EbnQ', '2025-09-29 17:19:58.954249', 'b84d3272-3aff-47a3-8e14-1fc3e0618af2')
+2025-09-22 22:49:58,957 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:26:48,241 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 23:26:59,035 - app.core.logging - INFO - Logging setup completed
+2025-09-22 23:26:59,045 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 23:26:59,046 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 23:26:59,047 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:26:59,048 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:26:59,049 - app.core.database - INFO - Database tables created successfully
+2025-09-22 23:37:23,579 - app.core.logging - INFO - Logging setup completed
+2025-09-22 23:37:23,589 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 23:37:23,591 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:37:23,591 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 23:37:23,591 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,591 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 23:37:23,591 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 23:37:23,592 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:37:23,593 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:37:23,593 - app.core.database - INFO - Database tables created successfully
+2025-09-22 23:43:11,799 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 23:43:14,040 - app.core.logging - INFO - Logging setup completed
+2025-09-22 23:43:14,050 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 23:43:14,051 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:43:14,051 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 23:43:14,051 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,052 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 23:43:14,052 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,052 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 23:43:14,052 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,053 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 23:43:14,053 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,053 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 23:43:14,053 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,053 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 23:43:14,054 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:43:14,054 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:43:14,055 - app.core.database - INFO - Database tables created successfully
+2025-09-22 23:43:57,541 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 23:44:55,716 - app.core.logging - INFO - Logging setup completed
+2025-09-22 23:44:55,727 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 23:44:55,729 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:44:55,729 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 23:44:55,729 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,729 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 23:44:55,730 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,731 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 23:44:55,731 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:44:55,731 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:44:55,731 - app.core.database - INFO - Database tables created successfully
+2025-09-22 23:46:48,609 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:46:48,640 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 23:46:48,641 - sqlalchemy.engine.Engine - INFO - [generated in 0.00035s] ('nishunara862@gmail.com',)
+2025-09-22 23:46:48,642 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 23:46:48,905 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:46:48,915 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:46:48,916 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 23:46:48,916 - sqlalchemy.engine.Engine - INFO - [generated in 0.00011s] ('6fa1bb4d-078b-4de3-9c01-2891960d8ae3', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTY2NTk5YS1mYmFjLTQ0ZmEtYWMwZC1lNzE1ODBiZjQxNWEiLCJleHAiOjE3NTkxNjk4MDgsInR5cGUiOiJyZWZyZXNoIn0.E8KSTv9esa39YW92kDgwOJm_i2ZxUJhbKtBvnHRG1sg', '2025-09-29 18:16:48.915252', '0e66599a-fbac-44fa-ac0d-e71580bf415a')
+2025-09-22 23:46:48,918 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:47:02,101 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:47:02,103 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 23:47:02,103 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-22 23:47:02,109 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 23:47:02,109 - sqlalchemy.engine.Engine - INFO - [generated in 0.00046s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-22 23:47:02,112 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 23:47:32,931 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:47:32,932 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 23:47:32,933 - sqlalchemy.engine.Engine - INFO - [cached since 30.83s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-22 23:47:32,936 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 23:47:32,937 - sqlalchemy.engine.Engine - INFO - [cached since 30.83s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-22 23:47:32,943 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 23:59:17,354 - app.core.logging - INFO - Logging setup completed
+2025-09-22 23:59:17,365 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 23:59:17,367 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 23:59:17,368 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 23:59:17,368 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,369 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 23:59:17,369 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 23:59:17,370 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,371 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 23:59:17,371 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 23:59:17,371 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 23:59:17,371 - app.core.database - INFO - Database tables created successfully
+2025-09-23 00:00:45,165 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:00:45,185 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-23 00:00:45,185 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-23 00:00:45,188 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-23 00:00:45,188 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-23 00:00:45,193 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-23 00:00:46,642 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:00:46,643 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-23 00:00:46,643 - sqlalchemy.engine.Engine - INFO - [cached since 1.458s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a',)
+2025-09-23 00:00:46,645 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-23 00:00:46,645 - sqlalchemy.engine.Engine - INFO - [cached since 1.457s ago] ('0e66599a-fbac-44fa-ac0d-e71580bf415a', 50, 0)
+2025-09-23 00:00:46,647 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-23 00:00:52,783 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:00:52,785 - sqlalchemy.engine.Engine - INFO - SELECT refresh_tokens.id, refresh_tokens.token, refresh_tokens.expires_at, refresh_tokens.created_at, refresh_tokens.user_id 
+FROM refresh_tokens 
+WHERE refresh_tokens.token = ?
+2025-09-23 00:00:52,785 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwZTY2NTk5YS1mYmFjLTQ0ZmEtYWMwZC1lNzE1ODBiZjQxNWEiLCJleHAiOjE3NTkxNjk4MDgsInR5cGUiOiJyZWZyZXNoIn0.E8KSTv9esa39YW92kDgwOJm_i2ZxUJhbKtBvnHRG1sg',)
+2025-09-23 00:00:52,789 - sqlalchemy.engine.Engine - INFO - DELETE FROM refresh_tokens WHERE refresh_tokens.id = ?
+2025-09-23 00:00:52,789 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ('6fa1bb4d-078b-4de3-9c01-2891960d8ae3',)
+2025-09-23 00:00:52,790 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:01:09,680 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:01:09,681 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-23 00:01:09,681 - sqlalchemy.engine.Engine - INFO - [generated in 0.00022s] ('aaryannara001@gmail.com',)
+2025-09-23 00:01:09,683 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-23 00:01:09,965 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:01:09,967 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:01:09,968 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-23 00:01:09,968 - sqlalchemy.engine.Engine - INFO - [generated in 0.00011s] ('f27f52ae-fd1a-4255-afe2-7190595f0dc2', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiOGE3NjliZi1jNThlLTQ3YjgtYjM0My1mMzdlNGFhZDU3NGMiLCJleHAiOjE3NTkxNzA2NjksInR5cGUiOiJyZWZyZXNoIn0.78Wg6Da-FDjvCJxPos52pZgYlWJc3epSypEbcFKTG5s', '2025-09-29 18:31:09.966413', 'b8a769bf-c58e-47b8-b343-f37e4aad574c')
+2025-09-23 00:01:09,969 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:01:16,063 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:01:16,064 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-23 00:01:16,064 - sqlalchemy.engine.Engine - INFO - [cached since 30.88s ago] ('b8a769bf-c58e-47b8-b343-f37e4aad574c',)
+2025-09-23 00:01:16,067 - sqlalchemy.engine.Engine - INFO - SELECT tasks.id, tasks.title, tasks.description, tasks.priority, tasks.status, tasks.latitude, tasks.longitude, tasks.address, tasks.category, tasks.images, tasks.assigned_at, tasks.due_date, tasks.completed_at, tasks.notes, tasks.issue_id, tasks.assignee_id 
+FROM tasks 
+WHERE tasks.assignee_id = ? ORDER BY tasks.due_date, tasks.assigned_at DESC
+ LIMIT ? OFFSET ?
+2025-09-23 00:01:16,068 - sqlalchemy.engine.Engine - INFO - [generated in 0.00023s] ('b8a769bf-c58e-47b8-b343-f37e4aad574c', 50, 0)
+2025-09-23 00:01:16,069 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-23 00:01:24,218 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:01:24,220 - sqlalchemy.engine.Engine - INFO - SELECT refresh_tokens.id, refresh_tokens.token, refresh_tokens.expires_at, refresh_tokens.created_at, refresh_tokens.user_id 
+FROM refresh_tokens 
+WHERE refresh_tokens.token = ?
+2025-09-23 00:01:24,220 - sqlalchemy.engine.Engine - INFO - [cached since 31.44s ago] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiOGE3NjliZi1jNThlLTQ3YjgtYjM0My1mMzdlNGFhZDU3NGMiLCJleHAiOjE3NTkxNzA2NjksInR5cGUiOiJyZWZyZXNoIn0.78Wg6Da-FDjvCJxPos52pZgYlWJc3epSypEbcFKTG5s',)
+2025-09-23 00:01:24,222 - sqlalchemy.engine.Engine - INFO - DELETE FROM refresh_tokens WHERE refresh_tokens.id = ?
+2025-09-23 00:01:24,222 - sqlalchemy.engine.Engine - INFO - [cached since 31.43s ago] ('f27f52ae-fd1a-4255-afe2-7190595f0dc2',)
+2025-09-23 00:01:24,223 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:01:44,494 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:01:44,495 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-23 00:01:44,495 - sqlalchemy.engine.Engine - INFO - [cached since 34.81s ago] ('aaryannara0001@gmail.com',)
+2025-09-23 00:01:44,496 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-23 00:02:57,342 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:02:57,345 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-23 00:02:57,345 - sqlalchemy.engine.Engine - INFO - [cached since 107.7s ago] ('aaryannara0001@gmail.com',)
+2025-09-23 00:02:57,589 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-23 00:02:57,589 - sqlalchemy.engine.Engine - INFO - [generated in 0.00030s] ('7d542aeb-d43a-4339-abfa-39a0119942a0', 'aaryannara0001@gmail.com', '$2b$12$lDbvG0qzsLJtxVLtJDDK9O/LqZo3DdzTk9OIvM.nVRSopwDOItqie', 'Aaryan', '7836096966', 'STAFF', None, 0, 0, 1, None)
+2025-09-23 00:02:57,591 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:02:57,592 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:02:57,593 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-23 00:02:57,593 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('7d542aeb-d43a-4339-abfa-39a0119942a0',)
+2025-09-23 00:02:57,594 - app.api.v1.endpoints.auth - INFO - New user registered: aaryannara0001@gmail.com with role UserRole.STAFF
+2025-09-23 00:02:57,595 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-23 00:02:57,648 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:02:57,648 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-23 00:02:57,648 - sqlalchemy.engine.Engine - INFO - [cached since 108s ago] ('aaryannara0001@gmail.com',)
+2025-09-23 00:02:57,892 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:02:57,893 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:02:57,893 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-23 00:02:57,893 - sqlalchemy.engine.Engine - INFO - [cached since 107.9s ago] ('4ebfd0ba-4db2-4de8-96d2-13654f19023d', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3ZDU0MmFlYi1kNDNhLTQzMzktYWJmYS0zOWEwMTE5OTQyYTAiLCJleHAiOjE3NTkxNzA3NzcsInR5cGUiOiJyZWZyZXNoIn0.UB354EO4qb9QML-pUHCucOujFEr4Gs4B34qLsyNyYho', '2025-09-29 18:32:57.892904', '7d542aeb-d43a-4339-abfa-39a0119942a0')
+2025-09-23 00:02:57,895 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-23 00:03:04,836 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-23 00:03:04,837 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-23 00:03:04,838 - sqlalchemy.engine.Engine - INFO - [cached since 139.7s ago] ('7d542aeb-d43a-4339-abfa-39a0119942a0',)
+2025-09-23 00:03:04,840 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-23 00:03:04,841 - sqlalchemy.engine.Engine - INFO - [generated in 0.00016s] (50, 0)
+2025-09-23 00:03:04,843 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:39:32,380 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:39:32,886 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:39:33,004 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:39:33,043 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:39:33,063 - main - INFO - Starting Citizen Engagement Backend
+2025-09-25 20:39:33,064 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:39:33,064 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-25 20:39:33,064 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,065 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-25 20:39:33,065 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,065 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-25 20:39:33,065 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-25 20:39:33,066 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:39:33,067 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:39:33,067 - app.core.database - INFO - Database tables created successfully
+2025-09-25 20:40:59,308 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:41:00,431 - watchfiles.main - INFO - 4 changes detected
+2025-09-25 20:41:40,756 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:41:40,765 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:41:40,765 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] ('test@example.com',)
+2025-09-25 20:41:40,766 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:41:52,033 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:41:52,033 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:41:52,033 - sqlalchemy.engine.Engine - INFO - [cached since 11.27s ago] ('test2@example.com',)
+2025-09-25 20:41:52,034 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:42:01,633 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:42:01,995 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:42:03,006 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:43:38,520 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:43:38,521 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:43:38,521 - sqlalchemy.engine.Engine - INFO - [cached since 117.8s ago] ('test@example.com',)
+2025-09-25 20:43:38,522 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-25 20:43:38,780 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-25 20:43:38,780 - sqlalchemy.engine.Engine - INFO - [generated in 0.00025s] ('c70f05a5-f614-402c-9eea-fbd5cef5fdd0', 'test@example.com', '$2b$12$YaPDp0bm2kheN.oxTPMteussxLJubCNluC.wfhM84wXBqy09hk/x6', 'Test User', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-25 20:43:38,781 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:43:38,782 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:43:38,783 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-25 20:43:38,783 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('c70f05a5-f614-402c-9eea-fbd5cef5fdd0',)
+2025-09-25 20:43:38,783 - app.api.v1.endpoints.auth - INFO - New user registered: test@example.com with role UserRole.CITIZEN
+2025-09-25 20:43:38,784 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:43:38,891 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:45:41,442 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:45:41,443 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:45:41,443 - sqlalchemy.engine.Engine - INFO - [cached since 240.7s ago] ('test@example.com',)
+2025-09-25 20:45:41,679 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:45:41,684 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:45:41,687 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-25 20:45:41,687 - sqlalchemy.engine.Engine - INFO - [generated in 0.00028s] ('80ba90cf-fad6-4bb0-a96a-90716d6c0c4c', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjNzBmMDVhNS1mNjE0LTQwMmMtOWVlYS1mYmQ1Y2VmNWZkZDAiLCJleHAiOjE3NTk0MTgxNDEsInR5cGUiOiJyZWZyZXNoIn0.w7qsU--mrEo_O2Ad4GORcYAK4gSGvbWRZuiKus_cQ2Y', '2025-10-02 15:15:41.684217', 'c70f05a5-f614-402c-9eea-fbd5cef5fdd0')
+2025-09-25 20:45:41,688 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:45:41,805 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:48:16,429 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:48:16,431 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-25 20:48:16,431 - sqlalchemy.engine.Engine - INFO - [generated in 0.00038s] ('c70f05a5-f614-402c-9eea-fbd5cef5fdd0',)
+2025-09-25 20:48:16,437 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (id, title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-25 20:48:16,437 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] ('a8ea3b38-815b-4956-bca4-4af92d13c873', 'Test Issue', 'This is a test issue', 'POTHOLE', 3, 'PENDING', 12.9716, 77.5946, 'Test Location', '[]', None, 'TRK-5DBF5169', 'c70f05a5-f614-402c-9eea-fbd5cef5fdd0', None)
+2025-09-25 20:48:16,438 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:48:16,438 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:48:16,439 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.id = ?
+2025-09-25 20:48:16,439 - sqlalchemy.engine.Engine - INFO - [generated in 0.00007s] ('a8ea3b38-815b-4956-bca4-4af92d13c873',)
+2025-09-25 20:48:16,440 - app.api.v1.endpoints.issues - INFO - Issue created: TRK-5DBF5169 by test@example.com
+2025-09-25 20:48:16,440 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:48:16,517 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:48:49,213 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:48:49,344 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-25 20:48:49,938 - watchfiles.main - INFO - 5 changes detected
+2025-09-25 20:48:50,492 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:48:50,532 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:48:50,548 - main - INFO - Starting Citizen Engagement Backend
+2025-09-25 20:48:50,549 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:48:50,549 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-25 20:48:50,549 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,549 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-25 20:48:50,549 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-25 20:48:50,550 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:48:50,551 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:48:50,551 - app.core.database - INFO - Database tables created successfully
+2025-09-25 20:48:50,579 - watchfiles.main - INFO - 16 changes detected
+2025-09-25 20:49:55,840 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:49:55,851 - main - INFO - Starting Citizen Engagement Backend
+2025-09-25 20:49:55,852 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:49:55,852 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-25 20:49:55,852 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,853 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-25 20:49:55,854 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,854 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-25 20:49:55,854 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,854 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-25 20:49:55,854 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,855 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-25 20:49:55,855 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,855 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-25 20:49:55,855 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:49:55,855 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:49:55,856 - app.core.database - INFO - Database tables created successfully
+2025-09-25 20:54:20,110 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:54:20,630 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:54:20,677 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:54:20,693 - main - INFO - Starting Citizen Engagement Backend
+2025-09-25 20:54:20,696 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:54:20,696 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-25 20:54:20,696 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-25 20:54:20,697 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,698 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-25 20:54:20,698 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,698 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-25 20:54:20,698 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:54:20,698 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:54:20,699 - app.core.database - INFO - Database tables created successfully
+2025-09-25 20:54:20,766 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:54:26,766 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:54:26,777 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:54:26,778 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] ('test2@example.com',)
+2025-09-25 20:54:26,779 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/.venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-25 20:54:27,037 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-25 20:54:27,038 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] ('1bcc04a6-7c60-4578-b9ca-6b9b06864909', 'test2@example.com', '$2b$12$1nAlrPKu6Is65brzmowEeer6OeVyy8lgohIGN431ZkdXgg9cP1bWu', 'Test User 2', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-25 20:54:27,039 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:54:27,040 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:54:27,041 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-25 20:54:27,041 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('1bcc04a6-7c60-4578-b9ca-6b9b06864909',)
+2025-09-25 20:54:27,042 - app.api.v1.endpoints.auth - INFO - New user registered: test2@example.com with role UserRole.CITIZEN
+2025-09-25 20:54:27,042 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-25 20:54:27,109 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:55:53,789 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:55:53,790 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-25 20:55:53,790 - sqlalchemy.engine.Engine - INFO - [cached since 87.02s ago] ('test2@example.com',)
+2025-09-25 20:55:54,025 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:55:54,029 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:55:54,030 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-25 20:55:54,030 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('c22a1cff-9c6a-49df-ad88-13f162acdeef', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxYmNjMDRhNi03YzYwLTQ1NzgtYjljYS02YjliMDY4NjQ5MDkiLCJleHAiOjE3NTk0MTg3NTQsInR5cGUiOiJyZWZyZXNoIn0.-aYcN_6Of1pHYlLTzc9PBkMy4jmoNOOAWHnDRIFPzS4', '2025-10-02 15:25:54.028992', '1bcc04a6-7c60-4578-b9ca-6b9b06864909')
+2025-09-25 20:55:54,031 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:55:54,137 - watchfiles.main - INFO - 3 changes detected
+2025-09-25 20:56:16,441 - watchfiles.main - INFO - 2 changes detected
+2025-09-25 20:56:16,579 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-25 20:56:17,057 - watchfiles.main - INFO - 1 change detected
+2025-09-25 20:56:17,329 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:56:17,369 - app.core.logging - INFO - Logging setup completed
+2025-09-25 20:56:17,385 - main - INFO - Starting Citizen Engagement Backend
+2025-09-25 20:56:17,386 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-25 20:56:17,386 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-25 20:56:17,386 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-25 20:56:17,387 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,388 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-25 20:56:17,388 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,388 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-25 20:56:17,388 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-25 20:56:17,388 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-25 20:56:17,389 - app.core.database - INFO - Database tables created successfully
+2025-09-25 20:56:17,419 - watchfiles.main - INFO - 7 changes detected

@@ -1,0 +1,1551 @@
+2025-09-22 01:19:48,597 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:19:48,614 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:19:48,617 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:19:48,618 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:19:48,618 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,618 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:19:48,618 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:19:48,619 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:48,620 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:19:48,620 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:19:57,114 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:19:57,819 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:19:57,837 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:19:57,838 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:19:57,838 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:19:57,838 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:19:57,839 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,840 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:19:57,840 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,840 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:19:57,840 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:19:57,841 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:19:57,841 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:20:11,787 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:20:11,803 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:20:11,805 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:20:11,805 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:20:11,805 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,806 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:20:11,807 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,807 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:20:11,807 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:20:11,807 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:20:11,807 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:20:40,485 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:20:40,495 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:20:40,495 - sqlalchemy.engine.Engine - INFO - [generated in 0.00021s] ('test@example.com',)
+2025-09-22 01:20:40,497 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:20:40,755 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 01:20:40,755 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ('test@example.com', '$2b$12$0p7y7q/.zjMgAfdi/N1IBu3rSqpo.96YJvuOyae4ZDYnkMhIIwVnq', 'Test User', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-22 01:20:40,756 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:20:40,757 - main - ERROR - Global exception: (sqlite3.IntegrityError) NOT NULL constraint failed: users.id
+[SQL: INSERT INTO users (email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at]
+[parameters: ('test@example.com', '$2b$12$0p7y7q/.zjMgAfdi/N1IBu3rSqpo.96YJvuOyae4ZDYnkMhIIwVnq', 'Test User', None, 'CITIZEN', None, 0, 0, 1, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: users.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/auth.py", line 211, in register
+    await db.commit()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4312, in flush
+    self._flush(objects)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4408, in _flush
+    flush_context.execute()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: users.id
+[SQL: INSERT INTO users (email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at]
+[parameters: ('test@example.com', '$2b$12$0p7y7q/.zjMgAfdi/N1IBu3rSqpo.96YJvuOyae4ZDYnkMhIIwVnq', 'Test User', None, 'CITIZEN', None, 0, 0, 1, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-22 01:20:59,971 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:21:00,715 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:21:00,731 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:21:00,732 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:00,732 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:21:00,732 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:21:00,733 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,734 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:21:00,734 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,734 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:21:00,734 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:00,734 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:00,735 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:21:10,388 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:21:11,247 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:21:11,265 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:21:11,267 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:11,267 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:21:11,267 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,267 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:21:11,267 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:21:11,268 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:11,269 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:11,269 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:21:17,259 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:17,267 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:21:17,268 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] ('test@example.com',)
+2025-09-22 01:21:17,268 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:21:17,525 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 01:21:17,525 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] ('c952786a-6120-465a-a3ab-6c36c78616ec', 'test@example.com', '$2b$12$1RSlzVL3QxVs0VNebHW6deexYl2MBnFAmx7GAnkFITHfh5jchFUmG', 'Test User', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-22 01:21:17,527 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:17,528 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:17,529 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:21:17,529 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('c952786a-6120-465a-a3ab-6c36c78616ec',)
+2025-09-22 01:21:17,529 - app.api.v1.endpoints.auth - INFO - New user registered: test@example.com with role UserRole.CITIZEN
+2025-09-22 01:21:17,531 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:21:22,856 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:22,856 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:21:22,856 - sqlalchemy.engine.Engine - INFO - [cached since 5.588s ago] ('test@example.com',)
+2025-09-22 01:21:23,091 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:23,099 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:23,100 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (token, expires_at, user_id) VALUES (?, ?, ?) RETURNING created_at
+2025-09-22 01:21:23,100 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYyODMsInR5cGUiOiJyZWZyZXNoIn0.8fLMu-KgipepgaY38ueFSDsiI-GHiDzDabhbFDRlRco', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')
+2025-09-22 01:21:23,100 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:21:23,101 - main - ERROR - Global exception: (sqlite3.IntegrityError) NOT NULL constraint failed: refresh_tokens.id
+[SQL: INSERT INTO refresh_tokens (token, expires_at, user_id) VALUES (?, ?, ?) RETURNING created_at]
+[parameters: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYyODMsInR5cGUiOiJyZWZyZXNoIn0.8fLMu-KgipepgaY38ueFSDsiI-GHiDzDabhbFDRlRco', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: refresh_tokens.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/auth.py", line 80, in login
+    await db.commit()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4312, in flush
+    self._flush(objects)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4408, in _flush
+    flush_context.execute()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: refresh_tokens.id
+[SQL: INSERT INTO refresh_tokens (token, expires_at, user_id) VALUES (?, ?, ?) RETURNING created_at]
+[parameters: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYyODMsInR5cGUiOiJyZWZyZXNoIn0.8fLMu-KgipepgaY38ueFSDsiI-GHiDzDabhbFDRlRco', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-22 01:21:40,598 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:21:41,342 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:21:41,360 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:21:41,362 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:41,362 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:21:41,362 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,363 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:21:41,363 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,363 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:21:41,363 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,364 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:21:41,364 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,364 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:21:41,364 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,365 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:21:41,365 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:21:41,365 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:41,366 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:21:51,399 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:51,410 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:21:51,410 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] ('test@example.com',)
+2025-09-22 01:21:51,411 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:21:51,667 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:21:51,671 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:21:51,671 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:21:51,672 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('b0971470-bca4-42a4-83a6-3fab22d92b4b', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYzMTEsInR5cGUiOiJyZWZyZXNoIn0.ZhQh-w-fZwyUeA9-3WtlVzRJgYJ9-vgI3yZNvzGdhdo', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')
+2025-09-22 01:21:51,672 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:21:51,673 - main - ERROR - Global exception: (sqlite3.IntegrityError) NOT NULL constraint failed: refresh_tokens.expires_at
+[SQL: INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at]
+[parameters: ('b0971470-bca4-42a4-83a6-3fab22d92b4b', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYzMTEsInR5cGUiOiJyZWZyZXNoIn0.ZhQh-w-fZwyUeA9-3WtlVzRJgYJ9-vgI3yZNvzGdhdo', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: refresh_tokens.expires_at
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/auth.py", line 81, in login
+    await db.commit()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4312, in flush
+    self._flush(objects)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4408, in _flush
+    flush_context.execute()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: refresh_tokens.expires_at
+[SQL: INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at]
+[parameters: ('b0971470-bca4-42a4-83a6-3fab22d92b4b', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjOTUyNzg2YS02MTIwLTQ2NWEtYTNhYi02YzM2Yzc4NjE2ZWMiLCJleHAiOjE3NjEwNzYzMTEsInR5cGUiOiJyZWZyZXNoIn0.ZhQh-w-fZwyUeA9-3WtlVzRJgYJ9-vgI3yZNvzGdhdo', None, 'c952786a-6120-465a-a3ab-6c36c78616ec')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-22 01:22:41,524 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:22:42,426 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:22:42,443 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:22:42,445 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:22:42,445 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:22:42,445 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,445 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:22:42,445 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:22:42,446 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:42,447 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:22:42,447 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:22:51,437 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:22:52,232 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:22:52,249 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:22:52,251 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:22:52,251 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:22:52,251 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,254 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:22:52,254 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,254 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:22:52,254 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,269 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:22:52,269 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,273 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:22:52,274 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,274 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:22:52,274 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:22:52,276 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:22:52,280 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:22:56,486 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:22:56,495 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:22:56,495 - sqlalchemy.engine.Engine - INFO - [generated in 0.00016s] ('test@example.com',)
+2025-09-22 01:22:56,496 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:22:56,751 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:23:04,499 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:04,500 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:23:04,500 - sqlalchemy.engine.Engine - INFO - [cached since 8.004s ago] ('test@example.com',)
+2025-09-22 01:23:04,500 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:23:12,129 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:12,130 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:23:12,130 - sqlalchemy.engine.Engine - INFO - [cached since 15.63s ago] ('test2@example.com',)
+2025-09-22 01:23:12,366 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 01:23:12,366 - sqlalchemy.engine.Engine - INFO - [generated in 0.00024s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967', 'test2@example.com', '$2b$12$6eJjJn4oYxcKtOcorJWYr.WhISpNuoEhJ/5MBSgJ4AO/fYAKQc5QW', 'Test User 2', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-22 01:23:12,368 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:23:12,369 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:12,370 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:23:12,370 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:23:12,370 - app.api.v1.endpoints.auth - INFO - New user registered: test2@example.com with role UserRole.CITIZEN
+2025-09-22 01:23:12,371 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:23:15,462 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:15,462 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:23:15,462 - sqlalchemy.engine.Engine - INFO - [cached since 18.97s ago] ('test2@example.com',)
+2025-09-22 01:23:15,696 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:23:15,700 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:15,700 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:23:15,700 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('314c3839-66aa-4a61-a844-6a5446b66a53', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzYzOTUsInR5cGUiOiJyZWZyZXNoIn0.b31r80dMqnkTVUCnH7M29UEsvJNVC_dVgudwAVc4Vyk', '2025-10-21 19:53:15.699805', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:23:15,701 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:23:22,072 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:22,073 - sqlalchemy.engine.Engine - INFO - SELECT refresh_tokens.id, refresh_tokens.token, refresh_tokens.expires_at, refresh_tokens.created_at, refresh_tokens.user_id 
+FROM refresh_tokens 
+WHERE refresh_tokens.token = ? AND refresh_tokens.user_id = ?
+2025-09-22 01:23:22,073 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzYzOTUsInR5cGUiOiJyZWZyZXNoIn0.b31r80dMqnkTVUCnH7M29UEsvJNVC_dVgudwAVc4Vyk', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:23:22,074 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:23:22,074 - sqlalchemy.engine.Engine - INFO - [generated in 0.00007s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:23:22,075 - sqlalchemy.engine.Engine - INFO - UPDATE refresh_tokens SET token=?, expires_at=? WHERE refresh_tokens.id = ?
+2025-09-22 01:23:22,075 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY0MDIsInR5cGUiOiJyZWZyZXNoIn0.HtLqO_v2F8Ke83qgbXWgMgtV_BWvpd_sYiFN2cmQmyo', '2025-10-21 19:53:22.074724', '314c3839-66aa-4a61-a844-6a5446b66a53')
+2025-09-22 01:23:22,076 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:23:55,952 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:23:57,671 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:23:57,688 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:23:57,690 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:23:57,690 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:23:57,690 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:23:57,691 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,692 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:23:57,692 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:23:57,692 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:23:57,692 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:24:27,473 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:24:27,485 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:24:27,485 - sqlalchemy.engine.Engine - INFO - [generated in 0.00021s] ('test2@example.com',)
+2025-09-22 01:24:27,486 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:24:27,744 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:24:27,748 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:24:27,748 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:24:27,748 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('9d559243-a369-448b-bdba-cf84d85919df', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY0NjcsInR5cGUiOiJyZWZyZXNoIn0.m_xFhNj-E6iQV0hnnJbCJlv_rrJ-G6fWaQwl7kL7lYQ', '2025-10-21 19:54:27.747397', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:24:27,750 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:24:51,691 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:24:51,693 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:24:51,693 - sqlalchemy.engine.Engine - INFO - [cached since 24.21s ago] ('test2@example.com',)
+2025-09-22 01:24:51,930 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:24:51,931 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:24:51,931 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:24:51,931 - sqlalchemy.engine.Engine - INFO - [cached since 24.18s ago] ('d0740520-e606-474c-9178-3367cb11ee76', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY0OTEsInR5cGUiOiJyZWZyZXNoIn0.zvsICxNm5vSH-Cbx4qnzqZI85EH690alvy5Rnvdwhl8', '2025-10-21 19:54:51.930586', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:24:51,932 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:24:51,943 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:24:51,944 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:24:51,944 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:24:51,946 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 01:24:51,946 - sqlalchemy.engine.Engine - INFO - [generated in 0.00013s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967', 50, 0)
+2025-09-22 01:24:51,947 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:25:02,707 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:02,708 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:25:02,708 - sqlalchemy.engine.Engine - INFO - [cached since 35.22s ago] ('test2@example.com',)
+2025-09-22 01:25:02,943 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:25:02,944 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:02,944 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:25:02,944 - sqlalchemy.engine.Engine - INFO - [cached since 35.2s ago] ('4cbfac58-d4bd-4d16-99db-01989c5bea97', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY1MDIsInR5cGUiOiJyZWZyZXNoIn0.jMGeqv1eey1zxlnB0JNRECBXwkpTkGmOEE4-fr8IK3M', '2025-10-21 19:55:02.943828', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:25:02,946 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:25:02,955 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:02,955 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:25:02,956 - sqlalchemy.engine.Engine - INFO - [cached since 11.01s ago] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:25:02,956 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:25:12,222 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:12,222 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:25:12,222 - sqlalchemy.engine.Engine - INFO - [cached since 44.74s ago] ('test2@example.com',)
+2025-09-22 01:25:12,459 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:25:12,460 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:12,460 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:25:12,460 - sqlalchemy.engine.Engine - INFO - [cached since 44.71s ago] ('6487cbfa-d0d6-4e3e-ae67-3654ea491266', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY1MTIsInR5cGUiOiJyZWZyZXNoIn0.m4qdDbQmmH82EeWGmxZWblqW8dbgFzLPBFNkods6LSQ', '2025-10-21 19:55:12.459969', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:25:12,462 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:25:12,471 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:25:12,471 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:25:12,472 - sqlalchemy.engine.Engine - INFO - [cached since 20.53s ago] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:25:12,473 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 01:25:12,473 - sqlalchemy.engine.Engine - INFO - [generated in 0.00015s] ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', [], None, 'TRK-630A7095', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)
+2025-09-22 01:25:12,473 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:25:12,474 - main - ERROR - Global exception: (sqlite3.ProgrammingError) Error binding parameter 9: type 'list' is not supported
+[SQL: INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at]
+[parameters: ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', [], None, 'TRK-630A7095', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.ProgrammingError: Error binding parameter 9: type 'list' is not supported
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/issues.py", line 58, in create_issue
+    await db.commit()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4312, in flush
+    self._flush(objects)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4408, in _flush
+    flush_context.execute()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.ProgrammingError: (sqlite3.ProgrammingError) Error binding parameter 9: type 'list' is not supported
+[SQL: INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at]
+[parameters: ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', [], None, 'TRK-630A7095', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-09-22 01:26:12,140 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:26:13,728 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:26:13,746 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:26:13,747 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:13,747 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:26:13,747 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:26:13,748 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,749 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:26:13,749 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,749 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:26:13,749 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:13,749 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:26:13,750 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:26:25,378 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:26:26,098 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:26:26,115 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:26:26,116 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:26:26,117 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:26,118 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:26:26,119 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:26:39,727 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:26:40,426 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:26:40,442 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:26:40,443 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:40,443 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:26:40,443 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:26:40,444 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,445 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:26:40,445 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,445 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:26:40,445 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:26:40,445 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:26:40,446 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:26:48,015 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:48,024 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 01:26:48,024 - sqlalchemy.engine.Engine - INFO - [generated in 0.00018s] ('test2@example.com',)
+2025-09-22 01:26:48,025 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 01:26:48,284 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:26:48,291 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:48,292 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 01:26:48,292 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('343c3d19-a5b9-486c-bfcd-14445f1386f3', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJiY2U0YmJlMy02OGFhLTQ3ZDAtODZjYS02MTFjY2Y3YTE5NjciLCJleHAiOjE3NjEwNzY2MDgsInR5cGUiOiJyZWZyZXNoIn0.LSAilhFgtg-HTlHvl5zOY-KZSvu5XTHERoo64pOGGP0', '2025-10-21 19:56:48.291031', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967')
+2025-09-22 01:26:48,293 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:26:48,304 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:26:48,305 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 01:26:48,305 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('bce4bbe3-68aa-47d0-86ca-611ccf7a1967',)
+2025-09-22 01:26:48,307 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 01:26:48,307 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', '[]', None, 'TRK-0484DCBE', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)
+2025-09-22 01:26:48,307 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 01:26:48,308 - main - ERROR - Global exception: (sqlite3.IntegrityError) NOT NULL constraint failed: issues.id
+[SQL: INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at]
+[parameters: ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', '[]', None, 'TRK-0484DCBE', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlite3.IntegrityError: NOT NULL constraint failed: issues.id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/issues.py", line 59, in create_issue
+    await db.commit()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/session.py", line 1011, in commit
+    await greenlet_spawn(self.sync_session.commit)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 192, in greenlet_spawn
+    result = context.switch(value)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1969, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1256, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1231, in _prepare_impl
+    self.session.flush()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4312, in flush
+    self._flush(objects)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4447, in _flush
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 4408, in _flush
+    flush_context.execute()
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/orm/persistence.py", line 1226, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1416, in execute
+    return meth(
+           ^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1639, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1848, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1988, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2343, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 1969, in _exec_single_context
+    self.dialect.do_execute(
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 922, in do_execute
+    cursor.execute(statement, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 146, in execute
+    self._adapt_connection._handle_exception(error)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 298, in _handle_exception
+    raise error
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/dialects/sqlite/aiosqlite.py", line 128, in execute
+    self.await_(_cursor.execute(operation, parameters))
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 125, in await_only
+    return current.driver.switch(awaitable)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/sqlalchemy/util/_concurrency_py3k.py", line 185, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 48, in execute
+    await self._execute(self._cursor.execute, sql, parameters)
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/cursor.py", line 40, in _execute
+    return await self._conn._execute(fn, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 133, in _execute
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/venv/lib/python3.12/site-packages/aiosqlite/core.py", line 106, in run
+    result = function()
+             ^^^^^^^^^^
+sqlalchemy.exc.IntegrityError: (sqlite3.IntegrityError) NOT NULL constraint failed: issues.id
+[SQL: INSERT INTO issues (title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at]
+[parameters: ('Pothole on Main Street', 'Large pothole causing traffic issues and potential vehicle damage', 'POTHOLE', 4, 'PENDING', 40.7128, -74.006, 'Main Street, Downtown', '[]', None, 'TRK-0484DCBE', 'bce4bbe3-68aa-47d0-86ca-611ccf7a1967', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-09-22 01:27:33,405 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:27:34,153 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:27:34,170 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,172 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:27:34,173 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:27:34,174 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:27:34,174 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:31:30,344 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:31:31,349 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:31:31,365 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:31:31,369 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:31:31,369 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:31:31,369 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,370 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:31:31,370 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,370 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:31:31,370 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:31,371 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:31:31,372 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:31:38,867 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:31:39,696 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:31:39,715 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:31:39,717 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:31:39,717 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:31:39,717 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,718 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:31:39,718 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,718 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:31:39,718 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:39,719 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:31:39,720 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:31:52,276 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:31:53,082 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:31:53,099 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:31:53,101 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:31:53,101 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:31:53,101 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,102 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:31:53,102 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,103 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:31:53,103 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,103 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:31:53,103 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,103 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:31:53,104 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,104 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:31:53,104 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:31:53,105 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:31:53,105 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:32:02,749 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:32:03,647 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:32:03,667 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:32:03,669 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:32:03,669 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:32:03,669 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,670 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:32:03,670 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,670 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:32:03,670 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:32:03,671 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:32:03,672 - app.core.database - INFO - Database tables created successfully
+2025-09-22 01:44:40,637 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 01:44:41,411 - app.core.logging - INFO - Logging setup completed
+2025-09-22 01:44:41,429 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 01:44:41,430 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 01:44:41,431 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 01:44:41,432 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 01:44:41,434 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 01:44:41,435 - app.core.database - INFO - Database tables created successfully
+2025-09-22 09:52:37,426 - app.core.logging - INFO - Logging setup completed
+2025-09-22 09:52:37,444 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 09:52:37,447 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:52:37,447 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 09:52:37,448 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,448 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 09:52:37,448 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,448 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 09:52:37,448 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 09:52:37,449 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:52:37,450 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:52:37,450 - app.core.database - INFO - Database tables created successfully
+2025-09-22 09:52:57,548 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:52:57,557 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:52:57,558 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] ('test@example.com',)
+2025-09-22 09:52:57,558 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:00,591 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:00,592 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:53:00,592 - sqlalchemy.engine.Engine - INFO - [cached since 3.035s ago] ('test2@example.com',)
+2025-09-22 09:53:00,593 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:05,623 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:05,623 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:53:05,624 - sqlalchemy.engine.Engine - INFO - [cached since 8.066s ago] ('unique@example.com',)
+2025-09-22 09:53:05,625 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 09:53:05,891 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 09:53:05,891 - sqlalchemy.engine.Engine - INFO - [generated in 0.00027s] ('74f5395b-b82e-4b55-a3ac-e23223f17002', 'unique@example.com', '$2b$12$XScuJv0D/8IC78pbIlOWUOswP5sTXO7QYRjn0CJ/HbVSMQI/GMmWq', 'Unique User', None, 'CITIZEN', None, 0, 0, 1, None)
+2025-09-22 09:53:05,893 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:53:05,894 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:05,895 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:53:05,895 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:53:05,896 - app.api.v1.endpoints.auth - INFO - New user registered: unique@example.com with role UserRole.CITIZEN
+2025-09-22 09:53:05,897 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:13,374 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:13,374 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:53:13,374 - sqlalchemy.engine.Engine - INFO - [cached since 15.82s ago] ('unique@example.com',)
+2025-09-22 09:53:13,611 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:53:13,616 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:13,616 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 09:53:13,616 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('ad91a944-4070-4cdd-a034-4d239fbda801', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI3NGY1Mzk1Yi1iODJlLTRiNTUtYTNhYy1lMjMyMjNmMTcwMDIiLCJleHAiOjE3NjExMDY5OTMsInR5cGUiOiJyZWZyZXNoIn0.85C88-r3vQGaiMBZZZEni7aViQ2qUwfx0elZQHOkz0A', '2025-10-22 04:23:13.615706', '74f5395b-b82e-4b55-a3ac-e23223f17002')
+2025-09-22 09:53:13,617 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:53:24,311 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:24,313 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:53:24,313 - sqlalchemy.engine.Engine - INFO - [generated in 0.00037s] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:53:24,316 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 09:53:24,316 - sqlalchemy.engine.Engine - INFO - [generated in 0.00019s] ('74f5395b-b82e-4b55-a3ac-e23223f17002', 50, 0)
+2025-09-22 09:53:24,319 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:34,061 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:34,062 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:53:34,062 - sqlalchemy.engine.Engine - INFO - [cached since 9.75s ago] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:53:34,066 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:42,147 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:42,147 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:53:42,147 - sqlalchemy.engine.Engine - INFO - [cached since 17.84s ago] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:53:42,149 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (id, title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 09:53:42,149 - sqlalchemy.engine.Engine - INFO - [generated in 0.00020s] ('96c65697-e9da-4592-85f8-6dcce081e0fb', 'Test Issue', 'This is a test issue', 'POTHOLE', 3, 'PENDING', 12.9716, 77.5946, 'Test Location', '[]', None, 'TRK-AF4981D0', '74f5395b-b82e-4b55-a3ac-e23223f17002', None)
+2025-09-22 09:53:42,150 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:53:42,151 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:42,151 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.id = ?
+2025-09-22 09:53:42,152 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('96c65697-e9da-4592-85f8-6dcce081e0fb',)
+2025-09-22 09:53:42,152 - app.api.v1.endpoints.issues - INFO - Issue created: TRK-AF4981D0 by unique@example.com
+2025-09-22 09:53:42,153 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:53:42,154 - main - ERROR - Global exception: 1 validation error for IssueResponse
+images
+  Input should be a valid list [type=list_type, input_value='[]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/list_type
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 34, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/cors.py", line 83, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 274, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/fastapi/routing.py", line 191, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aaryannara/Downloads/project/backend/app/api/v1/endpoints/issues.py", line 65, in create_issue
+    return IssueResponse.from_orm(issue)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/typing_extensions.py", line 2956, in wrapper
+    return arg(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 1129, in from_orm
+    return cls.model_validate(obj)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pydantic/main.py", line 503, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for IssueResponse
+images
+  Input should be a valid list [type=list_type, input_value='[]', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.5/v/list_type
+2025-09-22 09:53:55,538 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 09:53:56,380 - app.core.logging - INFO - Logging setup completed
+2025-09-22 09:53:56,397 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 09:53:56,398 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:53:56,398 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 09:53:56,398 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,398 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 09:53:56,398 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 09:53:56,399 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:53:56,400 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:53:56,400 - app.core.database - INFO - Database tables created successfully
+2025-09-22 09:54:04,580 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 09:54:14,114 - app.core.logging - INFO - Logging setup completed
+2025-09-22 09:54:14,131 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 09:54:14,135 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:14,135 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 09:54:14,135 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 09:54:14,136 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,137 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 09:54:14,137 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,137 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 09:54:14,137 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:54:14,137 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:54:14,138 - app.core.database - INFO - Database tables created successfully
+2025-09-22 09:54:22,577 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:22,585 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:54:22,586 - sqlalchemy.engine.Engine - INFO - [generated in 0.00017s] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:54:22,587 - sqlalchemy.engine.Engine - INFO - INSERT INTO issues (id, title, description, category, urgency, status, latitude, longitude, address, images, audio_note, tracking_id, reporter_id, assignee_id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING reported_at, updated_at
+2025-09-22 09:54:22,588 - sqlalchemy.engine.Engine - INFO - [generated in 0.00013s] ('f4c932b1-da65-4f28-9340-da426327a517', 'Test Issue', 'This is a test issue', 'POTHOLE', 3, 'PENDING', 12.9716, 77.5946, 'Test Location', '[]', None, 'TRK-0006CD1E', '74f5395b-b82e-4b55-a3ac-e23223f17002', None)
+2025-09-22 09:54:22,590 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:54:22,592 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:22,592 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.id = ?
+2025-09-22 09:54:22,592 - sqlalchemy.engine.Engine - INFO - [generated in 0.00009s] ('f4c932b1-da65-4f28-9340-da426327a517',)
+2025-09-22 09:54:22,593 - app.api.v1.endpoints.issues - INFO - Issue created: TRK-0006CD1E by unique@example.com
+2025-09-22 09:54:22,594 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:54:30,223 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:30,225 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:54:30,225 - sqlalchemy.engine.Engine - INFO - [cached since 7.64s ago] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:54:30,229 - sqlalchemy.engine.Engine - INFO - SELECT issues.id, issues.title, issues.description, issues.category, issues.urgency, issues.status, issues.latitude, issues.longitude, issues.address, issues.images, issues.audio_note, issues.tracking_id, issues.reported_at, issues.updated_at, issues.reporter_id, issues.assignee_id 
+FROM issues 
+WHERE issues.reporter_id = ? ORDER BY issues.reported_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 09:54:30,229 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('74f5395b-b82e-4b55-a3ac-e23223f17002', 50, 0)
+2025-09-22 09:54:30,231 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:54:41,838 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:41,839 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:54:41,839 - sqlalchemy.engine.Engine - INFO - [cached since 19.25s ago] ('74f5395b-b82e-4b55-a3ac-e23223f17002',)
+2025-09-22 09:54:41,840 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:54:48,472 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:48,472 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:54:48,472 - sqlalchemy.engine.Engine - INFO - [generated in 0.00012s] ('fieldworker@example.com',)
+2025-09-22 09:54:48,473 - passlib.handlers.bcrypt - WARNING - (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/passlib/handlers/bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2025-09-22 09:54:48,732 - sqlalchemy.engine.Engine - INFO - INSERT INTO users (id, email, password, name, phone, role, avatar, points, badge_count, is_active, last_login) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING created_at, updated_at
+2025-09-22 09:54:48,732 - sqlalchemy.engine.Engine - INFO - [generated in 0.00021s] ('d18de959-c168-48f3-8056-6619fa4a2eb0', 'fieldworker@example.com', '$2b$12$fN4XRkVrZbxNgBUDjayIPekYEMeWhxX1G4W/FJuGn3.7vxPZ2aPyK', 'Field Worker', None, 'FIELDWORKER', None, 0, 0, 1, None)
+2025-09-22 09:54:48,733 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:54:48,734 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:48,735 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:54:48,735 - sqlalchemy.engine.Engine - INFO - [generated in 0.00008s] ('d18de959-c168-48f3-8056-6619fa4a2eb0',)
+2025-09-22 09:54:48,735 - app.api.v1.endpoints.auth - INFO - New user registered: fieldworker@example.com with role UserRole.FIELDWORKER
+2025-09-22 09:54:48,736 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:54:56,867 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:56,867 - sqlalchemy.engine.Engine - INFO - SELECT users.id, users.email, users.password, users.name, users.phone, users.role, users.avatar, users.points, users.badge_count, users.is_active, users.last_login, users.created_at, users.updated_at 
+FROM users 
+WHERE users.email = ?
+2025-09-22 09:54:56,867 - sqlalchemy.engine.Engine - INFO - [cached since 8.395s ago] ('fieldworker@example.com',)
+2025-09-22 09:54:57,104 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:54:57,105 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:54:57,105 - sqlalchemy.engine.Engine - INFO - INSERT INTO refresh_tokens (id, token, expires_at, user_id) VALUES (?, ?, ?, ?) RETURNING created_at
+2025-09-22 09:54:57,105 - sqlalchemy.engine.Engine - INFO - [generated in 0.00010s] ('49f2757a-b258-4c21-a2ff-02a64f0c6b8d', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkMThkZTk1OS1jMTY4LTQ4ZjMtODA1Ni02NjE5ZmE0YTJlYjAiLCJleHAiOjE3NjExMDcwOTcsInR5cGUiOiJyZWZyZXNoIn0.NqRegheR-voTZKyrkBFdcQ2FqyJwAWaP81PZDaDFAUU', '2025-10-22 04:24:57.104680', 'd18de959-c168-48f3-8056-6619fa4a2eb0')
+2025-09-22 09:54:57,106 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:57:03,083 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:57:03,084 - sqlalchemy.engine.Engine - INFO - SELECT users.id AS users_id, users.email AS users_email, users.password AS users_password, users.name AS users_name, users.phone AS users_phone, users.role AS users_role, users.avatar AS users_avatar, users.points AS users_points, users.badge_count AS users_badge_count, users.is_active AS users_is_active, users.last_login AS users_last_login, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.id = ?
+2025-09-22 09:57:03,085 - sqlalchemy.engine.Engine - INFO - [cached since 160.5s ago] ('d18de959-c168-48f3-8056-6619fa4a2eb0',)
+2025-09-22 09:57:03,088 - sqlalchemy.engine.Engine - INFO - SELECT tasks.id, tasks.title, tasks.description, tasks.priority, tasks.status, tasks.latitude, tasks.longitude, tasks.address, tasks.category, tasks.images, tasks.assigned_at, tasks.due_date, tasks.completed_at, tasks.notes, tasks.issue_id, tasks.assignee_id 
+FROM tasks 
+WHERE tasks.assignee_id = ? ORDER BY tasks.due_date, tasks.assigned_at DESC
+ LIMIT ? OFFSET ?
+2025-09-22 09:57:03,088 - sqlalchemy.engine.Engine - INFO - [generated in 0.00014s] ('d18de959-c168-48f3-8056-6619fa4a2eb0', 50, 0)
+2025-09-22 09:57:03,090 - sqlalchemy.engine.Engine - INFO - ROLLBACK
+2025-09-22 09:57:43,355 - main - INFO - Shutting down Citizen Engagement Backend
+2025-09-22 09:57:44,510 - app.core.logging - INFO - Logging setup completed
+2025-09-22 09:57:44,529 - main - INFO - Starting Citizen Engagement Backend
+2025-09-22 09:57:44,530 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-09-22 09:57:44,530 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("users")
+2025-09-22 09:57:44,530 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("issues")
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("tasks")
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("comments")
+2025-09-22 09:57:44,531 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,532 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("votes")
+2025-09-22 09:57:44,532 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,532 - sqlalchemy.engine.Engine - INFO - PRAGMA main.table_info("refresh_tokens")
+2025-09-22 09:57:44,532 - sqlalchemy.engine.Engine - INFO - [raw sql] ()
+2025-09-22 09:57:44,532 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-09-22 09:57:44,533 - app.core.database - INFO - Database tables created successfully
